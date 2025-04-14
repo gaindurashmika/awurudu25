@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සුපිරි අවුරුදු සෙල්ලම් - තෝරන්න!</title>
+    <style>
+        /* === Basic Styles for Main Page === */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #1a2a4a, #3a5a8a); /* Slightly lighter background */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+        }
+
+        h1 {
+            color: #ffdd44; /* Brighter Gold */
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            margin-bottom: 20px;
+        }
+        p.intro {
+             margin-bottom: 50px;
+             font-size: 1.2em;
+             color: #eee;
+        }
+
+        .fireworks-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 40px; /* Adjust gap */
+            margin-top: 30px;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 800px; /* Limit max width */
+        }
+
+        .firecracker {
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            text-align: center;
+            width: 150px; /* Slightly larger items */
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.05); /* Subtle background */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .firecracker img.item-image {
+            max-width: 100px; /* Adjust if needed */
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .firecracker p.label {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .firecracker:hover {
+            transform: translateY(-10px) scale(1.05); /* Lift effect */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+         /* No busy or animation classes needed here */
+    </style>
+</head>
+<body>
+
+    <h1>සුපිරි අවුරුදු රතිඤ්ඤා අත්දැකීම!</h1>
+    <p class="intro">පහළින් කැමති එකක් Click කරලා බලන්න:</p>
+
+    <div class="fireworks-container">
+        <div class="firecracker" id="rocket">
+            <img src="rocket.png" alt="විසිල් අහස්කුර" class="item-image">
+            <p class="label">විසිල් අහස්කුර</p>
+        </div>
+
+ 
+
+ 
+
+    <script>
+    // Simple navigation script
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('rocket').addEventListener('click', () => {
+            window.location.href = 'rocket_page.html';
+        });
+
+        document.getElementById('spinner').addEventListener('click', () => {
+            window.location.href = 'spinner_page.html';
+        });
+
+     
+    });
+    </script>
+
+</body>
+</html>
